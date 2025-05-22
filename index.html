@@ -23,9 +23,17 @@
     }
 
     body {
-      background: var(--bg-color);
+      background: linear-gradient(135deg, #fce38a, #f38181, #fceabb, #a8edea);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
       color: var(--text-color);
       overflow-x: hidden;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
@@ -43,7 +51,7 @@
     header p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
-      color: #666;
+      color: #222;
     }
 
     .photo-frame {
@@ -129,7 +137,7 @@
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #999;
+      color: #333;
     }
 
     @keyframes fadeInDown {
@@ -166,7 +174,7 @@
   <section class="section">
     <h2>About Me</h2>
     <p>
-      I’m a B.Tech Computer Science student at SRMAP with a strong foundation in Python, C++, and full-stack development. I'm passionate about solving real-world problems through technology. My journey started with curiosity, evolved into purpose, and continues through projects in image processing, web development, and AI. I strive to stay updated with emerging tech, contribute to meaningful work, and constantly grow as a developer.
+      I’m a B.Tech Computer Science student at SRMAP with a strong foundation in Python, C++, and full-stack development. I'm passionate about solving real-world problems through technology. My journey started with curiosity, evolved into purpose, and continues through projects in image processing, web development, and AI.
     </p>
   </section>
 
